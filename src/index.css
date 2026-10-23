@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* Curated Frames design tokens */
+@theme {
+  --font-display: "Fraunces Variable", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-sans: "Instrument Sans Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --color-ivory: #faf7f0;
+  --color-paper: #fffdf8;
+  --color-ink: #25272a;
+  --color-ink-soft: #5b5f5b;
+  --color-ink-mute: #6f726d;
+  --color-line: #e6dfcf;
+  --color-sand: #efe8d8;
+  --color-sage: #4d6948;
+  --color-sage-deep: #38502f;
+  --color-sage-wash: #e4ebdc;
+}
+
+body {
+  @apply bg-ivory font-sans text-ink antialiased;
+}
+
+::selection {
+  background-color: var(--color-sage-wash);
+}
